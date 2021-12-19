@@ -14,4 +14,4 @@ const FibNumSchema = mongoose.Schema({
   }
 });
 
-module.exports = mongoose.model('FibNums', FibNumSchema);
+module.exports = mongoose.model('FibNum', FibNumSchema);
