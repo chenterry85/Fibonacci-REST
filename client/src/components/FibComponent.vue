@@ -10,7 +10,7 @@
     </div>
     <br>
     <div v-for="fib in fibs" v-bind:key="fib.number">
-      <div class="container p-2 my-2">
+    <div class="container p-2 my-2">
         <h2>{{ fib.number }}</h2>
         <h4>{{ `Fibonacci = ${fib.fib_value}` }}</h4>
         <small> {{ `Generated on: ${fib.date}` }} </small>
