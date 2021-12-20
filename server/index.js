@@ -9,6 +9,10 @@ const app = express();
 app.use( express.json() );
 app.use( cors() );
 
+// Setup routes
+const fibsRoute = require('./routes/fibs');
+app.use('/api/fibs', fibsRoute);
+
 // Handle Production
 if(process.env.NODE_ENV === 'production'){
   // static folder
@@ -19,10 +23,6 @@ if(process.env.NODE_ENV === 'production'){
     res.sendFile(__dirname + 'public/index.html');
   })
 }
-
-// Setup routes
-const fibsRoute = require('./routes/fibs');
-app.use('/api/fibs', fibsRoute);
 
 // Connect to MongoDB
 main().catch(err => console.error(err));
