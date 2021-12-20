@@ -7,6 +7,7 @@ const router = express.Router();
 // Get all Fibonacci numbers
 router.get('/', async (req, res) => {
   try{
+    console.log("getting fibs")
     const fibNums = await FibNum.find().sort({$natural:-1});
     res.status(200).json(fibNums);
   }catch(err){
