@@ -14,7 +14,7 @@ app.use( cors() );
 // Get all Fibonacci numbers
 app.get('/', async (req, res) => {
   try{
-    const fibNums = await FibNum.find({});
+    const fibNums = await FibNum.find().sort({$natural:-1});
     res.status(200).json(fibNums);
   }catch(err){
     res.status(500).json({message: err.message});
@@ -50,13 +50,8 @@ app.post('/', async (req,res) => {
 // Delete Fibonacci numbers
 app.delete('/', async (req, res) => {
   try{
-    if(req.body.number === -1){
-      await FibNum.deleteMany({});
-      res.status(200).json({message: 'All Fibonacci numbers deleted'});
-    }else{
-      await FibNum.deleteMany({number: req.body.number});
-      res.status(200).json({message: 'Specific Fibonacci numbers deleted'});
-    }
+    await FibNum.deleteMany({});
+    res.status(200).json({message: 'All Fibonacci numbers deleted'});
   }catch(err){
     res.status(500).json({message: err.message});
   }
