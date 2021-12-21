@@ -5,7 +5,6 @@
 - Node.js 12+
 - Vue 4.5+
 - MongoDB
-<br>
   
 ## Description
 
