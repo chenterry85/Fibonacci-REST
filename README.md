@@ -1,4 +1,4 @@
-# Fibonacci REST API demo
+# Fibonacci REST API Demo
 
 ## Requirements
   
@@ -9,7 +9,7 @@
   
 ## Description
 
-This is a web application for calculating fibonacci numbers and displaying all previous results. The front end is written in Vue.js as the Javascript framework and bootstrap for css styling, while the backend uses Node's Express.js server with mongoDB as the database. I deployed the website here: link. But if you want to run the website locally, go to "how to install and run locally" section.
+This is a web application for calculating fibonacci numbers and displaying all previous results. The front end is written in Vue.js as the Javascript framework and bootstrap for css styling, while the backend uses Node's Express.js server with mongoDB as the database. Click [here](https://peaceful-brook-94145.herokuapp.com) to view the deployed website. But if you want to run the website locally, go to the  co"how to install and run locally" section.
 
   
 ## Design Choice
@@ -18,7 +18,7 @@ I chose Express.js as it is fairly minimalist for fast setup and it provides mid
   
 ## How to install and run locally
 
-1) Clone the dev branch into your local depository. Change "myproject" to your project name.
+### 1) Clone the dev branch into your local depository. Change "myproject" to your project name.
 
 ```bash
 
@@ -26,7 +26,7 @@ git clone --branch dev https://github.com/chenterry85/Fibonacci-REST.git ./mypro
 
 ```
 
-2) Install npm dependencies
+### 2) Install npm dependencies
  ```bash
  cd myproject
  
@@ -38,14 +38,26 @@ npm update
 cd client
 npm install
 npm update
+
+# navigate back to main directory
+cd ..
 ```
 
-3) Run the Express server
+### 3) Add environment variables
+#### Create `.env` file with the following environment variables
+- Port: `5555`  
+- MongoDB's Database URI: `mongodb+srv://mongouser:mongo6868@cluster0.ipnoi.mongodb.net/fib_db?retryWrites=true&w=majority`  
+```bash
+echo -e "PORT=5555\nDB_URI=mongodb+srv://mongouser:mongo6868@cluster0.ipnoi.mongodb.net/fib_db?retryWrites=true&w=majority" > .env
+```
+
+### 4) Run the Express server
 ```bash
  npm start
  ```
 
-4) Run the Vue.js client 
+### 5) Run the Vue.js client  
+Open a new terminal session and in that new session run:  
 ```bash
 cd client
 npm run serve
