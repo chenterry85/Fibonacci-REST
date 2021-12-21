@@ -13,7 +13,7 @@ This is a web application for calculating fibonacci numbers and displaying all p
   
 ## Design Choice
 
-I chose Express.js as it is fairly minimalist for fast setup and it provides middleware packages that address most web development issues. MongoDB is a no brained as it is the best option for a non-relational database, which suites this use case for storing only Fibonacci numbers and a few attributes. As for Vue.js, I chose it because I had previous development experience with it and it is fast and simple to setup.
+I chose Express.js as it is fairly minimalistic for fast setup and it provides middleware packages that address most web development issues. MongoDB is a no brained as it is the most popular and best option for non-relational database, which suites this use case for storing only Fibonacci number and two other attributes. As for JS framework, I chose Vue.js because I had previous development experience with it and it is fast and simple to setup.
 <br>
   
 ## How to install and run locally
