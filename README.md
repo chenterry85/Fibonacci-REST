@@ -7,17 +7,17 @@
 - MongoDB
 <br>
   
-### Description
+## Description
 
 This is a web application for calculating fibonacci numbers and displaying all previous results. The front end is written in Vue.js as the Javascript framework and bootstrap for css styling, while the backend uses Node's Express.js server with mongoDB as the database. Click [here](https://peaceful-brook-94145.herokuapp.com) to view the deployed website. But if you want to run the website locally, go to the "How to install and run locally" section.
 <br>
   
-### Design Choice
+## Design Choice
 
 I chose Express.js as it is fairly minimalist for fast setup and it provides middleware packages that address most web development issues. MongoDB is a no brained as it is the best option for a non-relational database, which suites this use case for storing only Fibonacci numbers and a few attributes. As for Vue.js, I chose it because I had previous development experience with it and it is fast and simple to setup.
 <br>
   
-### How to install and run locally
+## How to install and run locally
 
 #### 1) Clone the dev branch into your local depository. Change "myproject" to your project name.
 
