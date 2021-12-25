@@ -8,7 +8,7 @@
   
 ## Description
 
-This is a web application for calculating fibonacci numbers and displaying all previous results. The front end is written in *Vue.js* as the Javascript framework and *bootstrap* for css styling, while the backend uses *Node's Express.js* server with *mongoDB* as the database. Click [here](https://peaceful-brook-94145.herokuapp.com) to view the deployed website. But if you want to run the website locally, go to the "How to install and run locally" section.
+This is a web application for calculating fibonacci numbers and displaying all previous results. The front end is written in **Vue.js** as the Javascript framework and **bootstrap** for css styling, while the backend uses **Node's Express.js** server with **mongoDB** as the database. Click [here](https://peaceful-brook-94145.herokuapp.com) to view the deployed website. But if you want to run the website locally, go to the "How to install and run locally" section.
 <br>
   
 ## How to install and run locally
